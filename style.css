@@ -1,102 +1,126 @@
-body {
-    box-sizing: border-box;
+* {
     margin: 0;
-    font-family: "Open Sans", sans-serif;
-    font-size: 14px;
-    color: #404040;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
   }
   
-  header {
-    float: left;
-    width: 225px;
-    height: auto;
-    border-right: solid #404040 1px;
-    border-bottom: solid #404040 1px;
-    border-radius: 0 0 6px 0;
-    padding: 10px;
-    margin-right: 10px;
-  }
-  
-  h1 {
-    font-family: "Great Vibes", cursive;
-    font-size: 52px;
-    color: #3493d5;
-    margin: 10px 0;
-  }
-  
-  ul {
-    padding: 0;
-  }
-  
-  li {
-    list-style: none;
-  }
-  
-  nav ul {
-    margin-left: 15px;
-  }
-  
-  nav ul li {
-    padding: 5px;
-    cursor: pointer;
-  }
-  
-  nav ul li:hover {
-    background-color: #f1a458;
-    color: #fff;
-  }
-  
-  main {
-    float: left;
-    margin-left: 50px;
-    width: 600px;
-  }
-  
-  .beer-details h2 {
-    font-size: 32px;
-    text-align: center;
-  }
-  
-  .beer-details h3 {
-    font-size: 24px;
-  }
-  
-  .beer-details img {
-    display: block;
-    height: 200px;
-    margin: 0 auto 25px auto;
-  }
-  
-  form {
-    width: 450px;
-    margin: 0 auto 50px auto;
-  }
-  
-  textarea {
-    display: block;
-    width: 100%;
-    height: 100px;
-    border: 1px solid gray;
-    padding: 5px;
-    font-size: 14px;
-    margin-bottom: 10px;
-  }
-  
-  form button[type="submit"] {
-    border: none;
-    font-size: 16px;
-    font-weight: 600;
-    text-transform: uppercase;
-    background-color: #f1a458;
-    color: #fff;
-    padding: 7px 10px;
-    cursor: pointer;
-  }
-  
-  #review-list li {
-    background-color: #fff3a9;
-    border-radius: 5px;
+  body {
     padding: 20px;
+    text-align: center;
+    background-color: #fafafa;
+  }
+  
+  .logo {
     margin-bottom: 20px;
+  }
+  
+  .image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .image-card {
+    width: 300px;
+    border: 1px solid #00000020;
+    border-radius: 2px;
+    text-align: left;
+    background-color: white;
+  }
+  
+  .image {
+    width: 300px;
+    /* border: 1px solid black; */
+  }
+  
+  .title {
+    text-align: left;
+    padding: 15px 10px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #000000dd;
+  }
+  
+  .likes-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+  }
+  
+  .likes {
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  
+  .like-button {
+    color: rgb(255, 127, 80);
+    font-size: 1.5rem;
+    border: none;
+    background: none;
+    transition: color 300ms;
+    cursor: pointer;
+  }
+  
+  .like-button:hover {
+    color: rgb(241, 71, 19);
+  }
+  
+  .like-button:active {
+    color: rgb(253, 159, 124);
+  }
+  
+  .like-button:focus {
+    outline: none;
+  }
+  
+  .comments {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 10px;
+    font-size: 0.85rem;
+  }
+  
+  .comments li {
+    margin: 2px 0;
+    letter-spacing: 0.2px;
+  }
+  
+  .comment-form {
+    width: 100%;
+    border-top: 1px solid #00000020;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  
+  .comment-input {
+    width: 83%;
+    border: none;
+    font-size: 0.8rem;
+  }
+  
+  .comment-input:focus {
+    outline: none;
+  }
+  
+  .comment-button {
+    border: none;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: rgb(92, 114, 238);
+    cursor: pointer;
+    transition: color 300ms;
+  }
+  
+  .comment-button:hover {
+    color: rgb(37, 68, 245);
+  }
+  
+  .comment-button:active {
+    color: rgb(127, 146, 250);
+  }
+  
+  .comment-button:focus {
+    outline: none;
   }
   
