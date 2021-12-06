@@ -123,4 +123,60 @@
   .comment-button:focus {
     outline: none;
   }
+
+  
+
+/* Column design
+  /* Create two equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 50%;
+      padding: 10px;
+      height: 300px; /* Should be removed. Only for demonstration */
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+/*Header design
+    /* Add some padding on document's body to prevent the content
+    to go underneath the header and footer */
+    body{        
+      padding-top: 60px;
+      padding-bottom: 40px;
+  }
+  .container{
+      width: 80%;
+      margin: 0 auto; /* Center the DIV horizontally */
+  }
+  .fixed-header, .fixed-footer{
+      width: 100%;
+      position: fixed;        
+      background: #333;
+      padding: 10px 0;
+      color: #fff;
+  }
+  .fixed-header{
+      top: 0;
+  }
+  .fixed-footer{
+      bottom: 0;
+  }    
+  /* Some more styles to beutify this example */
+  nav a{
+      color: #fff;
+      text-decoration: none;
+      padding: 7px 25px;
+      display: inline-block;
+  }
+  .container p{
+      line-height: 200px; /* Create scrollbar to test positioning */
+  }
+
+
+
   
