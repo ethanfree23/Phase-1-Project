@@ -132,7 +132,7 @@
       float: left;
       width: 50%;
       padding: 10px;
-      height: 300px; /* Should be removed. Only for demonstration */
+      height: flex; /* Should be removed. Only for demonstration */
     }
 
     /* Clear floats after the columns */
@@ -140,6 +140,7 @@
       content: "";
       display: table;
       clear: both;
+      height: flex
     }
 
 /*Header design
@@ -178,5 +179,22 @@
   }
 
 
+/* Ethan's styling for right side */
 
-  
+.h2 {
+  text-align: left
+}
+
+.h3 {
+  text-align: left
+}
+
+.h4 {
+  text-align: right
+}
+
+.p {
+  text-align: left
+}
+
+
