@@ -35,24 +35,48 @@
   
   .title {
     text-align: left;
-    padding: 15px 10px;
-    font-size: 0.9rem;
-    font-weight: 600;
+    padding: 5px 5px;
+    font-size: 0.8rem;
+    font-weight: 550;
     color: #000000dd;
   }
   
   .likes-section {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 0 10px;
+    padding: 0px;
   }
-  
+
+  .follow-button {
+    border: none;
+    background: none;
+    padding: 5px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: rgb(92, 114, 238);
+    cursor: pointer;
+    transition: color 300ms;
+  }
+
   .likes {
     font-size: 0.9rem;
     font-weight: 600;
+    color: grey;
+  }
+
+  .follow-button:hover {
+    color: rgb(37, 68, 245);
   }
   
+  .folow-button:active {
+    color: rgb(127, 146, 250);
+  }
+  
+  .follow-button:focus {
+    outline: none;
+  }
+
+
   .like-button {
     color: rgb(255, 127, 80);
     font-size: 1.5rem;
@@ -105,6 +129,7 @@
   
   .comment-button {
     border: none;
+    background: none;
     font-size: 0.8rem;
     font-weight: 600;
     color: rgb(92, 114, 238);
@@ -125,6 +150,18 @@
   }
 
   
+
+  /* Add Image Button */
+  .add-image-button{
+    border: none;
+    background-color: rgb(255, 255, 255);
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: rgb(92, 114, 238);
+    padding: 10px;
+    cursor: pointer;
+    transition: color 300ms;
+  }
 
 /* Column design
   /* Create two equal columns that floats next to each other */
