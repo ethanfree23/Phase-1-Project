@@ -1,237 +1,305 @@
 * {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
-  }
-  
-  body {
-    padding: 20px;
-    text-align: center;
-    background-color: #fafafa;
-  }
-  
-  .logo {
-    margin-bottom: 20px;
-  }
-  
-  .image-container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .image-card {
-    width: 300px;
-    border: 1px solid #00000020;
-    border-radius: 2px;
-    text-align: left;
-    background-color: white;
-  }
-  
-  .image {
-    width: 300px;
-    /* border: 1px solid black; */
-  }
-  
-  .title {
-    text-align: left;
-    padding: 5px 5px;
-    font-size: 0.8rem;
-    font-weight: 550;
-    color: #000000dd;
-  }
-  
-  .likes-section {
-    display: flex;
-    align-items: center;
-    padding: 0px;
-  }
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
 
-  .follow-button {
-    border: none;
-    background: none;
-    padding: 5px;
-    font-size: 0.8rem;
-    font-weight: 600;
-    color: rgb(92, 114, 238);
-    cursor: pointer;
-    transition: color 300ms;
-  }
+body {
+  padding: 20px;
+  text-align: center;
+  background-color: #fafafa;
+}
 
-  .likes {
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: grey;
-  }
+.logo {
+  margin-bottom: 20px;
+}
 
-  .follow-button:hover {
-    color: rgb(37, 68, 245);
-  }
-  
-  .folow-button:active {
-    color: rgb(127, 146, 250);
-  }
-  
-  .follow-button:focus {
-    outline: none;
-  }
+.image-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.image-card {
+  width: 300px;
+  border: 1px solid #00000020;
+  border-radius: 2px;
+  text-align: left;
+  background-color: white;
+}
+
+.image {
+  width: 300px;
+  /* border: 1px solid black; */
+}
+
+.title {
+  text-align: left;
+  padding: 5px 5px;
+  font-size: 0.8rem;
+  font-weight: 550;
+  color: #000000dd;
+}
+
+.likes-section {
+  display: flex;
+  align-items: center;
+  padding: 0px;
+}
+
+.follow-button {
+  border: none;
+  background: none;
+  padding: 5px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: rgb(92, 114, 238);
+  cursor: pointer;
+  transition: color 300ms;
+}
+
+.likes {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: grey;
+}
+
+.follow-button:hover {
+  color: rgb(37, 68, 245);
+}
+
+.folow-button:active {
+  color: rgb(127, 146, 250);
+}
+
+.follow-button:focus {
+  outline: none;
+}
 
 
-  .like-button {
-    color: rgb(255, 127, 80);
-    font-size: 1.5rem;
-    border: none;
-    background: none;
-    transition: color 300ms;
-    cursor: pointer;
-  }
-  
-  .like-button:hover {
-    color: rgb(241, 71, 19);
-  }
-  
-  .like-button:active {
-    color: rgb(253, 159, 124);
-  }
-  
-  .like-button:focus {
-    outline: none;
-  }
-  
-  .comments {
-    list-style-type: none;
-    margin-left: 0;
-    padding-left: 10px;
-    font-size: 0.85rem;
-  }
-  
-  .comments li {
-    margin: 2px 0;
-    letter-spacing: 0.2px;
-  }
-  
-  .comment-form {
-    width: 100%;
-    border-top: 1px solid #00000020;
-    padding: 10px;
-    margin-top: 10px;
-  }
-  
-  .comment-input {
-    width: 83%;
-    border: none;
-    font-size: 0.8rem;
-  }
-  
-  .comment-input:focus {
-    outline: none;
-  }
-  
-  .comment-button {
-    border: none;
-    background: none;
-    font-size: 0.8rem;
-    font-weight: 600;
-    color: rgb(92, 114, 238);
-    cursor: pointer;
-    transition: color 300ms;
-  }
-  
-  .comment-button:hover {
-    color: rgb(37, 68, 245);
-  }
-  
-  .comment-button:active {
-    color: rgb(127, 146, 250);
-  }
-  
-  .comment-button:focus {
-    outline: none;
-  }
+.like-button {
+  color: rgb(255, 127, 80);
+  font-size: 1.5rem;
+  border: none;
+  background: none;
+  transition: color 300ms;
+  cursor: pointer;
+}
 
-  
+.like-button:hover {
+  color: rgb(241, 71, 19);
+}
 
-  /* Add Image Button */
-  .add-image-button{
-    border: none;
-    background-color: rgb(255, 255, 255);
-    font-size: 0.8rem;
-    font-weight: 600;
-    color: rgb(92, 114, 238);
-    padding: 10px;
-    cursor: pointer;
-    transition: color 300ms;
-  }
+.like-button:active {
+  color: rgb(253, 159, 124);
+}
+
+.like-button:focus {
+  outline: none;
+}
+
+.comments {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 10px;
+  font-size: 0.85rem;
+}
+
+.comments li {
+  margin: 2px 0;
+  letter-spacing: 0.2px;
+}
+
+.comment-form {
+  width: 100%;
+  border-top: 1px solid #00000020;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.comment-input {
+  width: 83%;
+  border: none;
+  font-size: 0.8rem;
+}
+
+.comment-input:focus {
+  outline: none;
+}
+
+.comment-button {
+  border: none;
+  background: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: rgb(92, 114, 238);
+  cursor: pointer;
+  transition: color 300ms;
+}
+
+.comment-button:hover {
+  color: rgb(37, 68, 245);
+}
+
+.comment-button:active {
+  color: rgb(127, 146, 250);
+}
+
+.comment-button:focus {
+  outline: none;
+}
+
+
+
+/* Add Image Button */
+.add-image-button{
+  border: none;
+  background-color: rgb(255, 255, 255);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: rgb(92, 114, 238);
+  padding: 10px;
+  cursor: pointer;
+  transition: color 300ms;
+}
 
 /* Column design
-  /* Create two equal columns that floats next to each other */
-    .column {
-      float: left;
-      width: 50%;
-      padding: 10px;
-      height: flex; /* Should be removed. Only for demonstration */
-    }
+/* Create two equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: flex; /* Should be removed. Only for demonstration */
+  }
 
-    /* Clear floats after the columns */
-    .row:after {
-      content: "";
-      display: table;
-      clear: both;
-      height: flex
-    }
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    height: flex
+  }
 
 /*Header design
-    /* Add some padding on document's body to prevent the content
-    to go underneath the header and footer */
-    body{        
-      padding-top: 60px;
-      padding-bottom: 40px;
-  }
-  .container{
-      width: 80%;
-      margin: 0 auto; /* Center the DIV horizontally */
-  }
-  .fixed-header, .fixed-footer{
-      width: 100%;
-      position: fixed;        
-      background: #333;
-      padding: 10px 0;
-      color: #fff;
-  }
-  .fixed-header{
-      top: 0;
-  }
-  .fixed-footer{
-      bottom: 0;
-  }    
-  /* Some more styles to beutify this example */
-  nav a{
-      color: #fff;
-      text-decoration: none;
-      padding: 7px 25px;
-      display: inline-block;
-  }
-  .container p{
-      line-height: 200px; /* Create scrollbar to test positioning */
-  }
+  /* Add some padding on document's body to prevent the content
+  to go underneath the header and footer */
+  body{        
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+.container{
+    width: 80%;
+    margin: 0 auto; /* Center the DIV horizontally */
+}
+.fixed-header, .fixed-footer{
+    width: 100%;
+    position: fixed;        
+    background: #333;
+    padding: 10px 0;
+    color: #fff;
+}
+.fixed-header{
+    top: 0;
+}
+.fixed-footer{
+    bottom: 0;
+}    
+/* Some more styles to beutify this example */
+nav a{
+    color: #fff;
+    text-decoration: none;
+    padding: 7px 25px;
+    display: inline-block;
+}
+.container p{
+    line-height: 200px; /* Create scrollbar to test positioning */
+}
+
 
 
 /* Ethan's styling for right side */
-
+/* Tags */
 .h2 {
-  text-align: left
+  color: gray;
+  text-align: left;
+  padding: 0
 }
-
 .h3 {
+  color: gray;
   text-align: left
 }
-
-.h4 {
-  text-align: right
-}
-
 .p {
-  text-align: left
+  color: black;
+  text-align: left;
+  padding: 3px
+}
+/* MODAL button */
+/* The Modal Button */
+.rent-button {
+  border: none;
+  background: none;
+  padding: 5px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: rgb(92, 114, 238);
+  cursor: pointer;
+  transition: color 300ms;
+  text-align: flex
+}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default! */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* spans */
+#span-title {
+  font-size: 90%;
+  color: black
+}
+#span-artistName {
+  color: black;
+  font-size: 90%
+}
+#span-dimensions {
+  color: black;
+  font-size: 90%
+}
+#span-medium {
+  color: black;
+  font-size: 90%
+}
+#span-description {
+  color: black;
+  font-size: 90%
 }
 
 
