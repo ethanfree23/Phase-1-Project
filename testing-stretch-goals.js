@@ -46,6 +46,47 @@ function renderArtArray(){
     });
 }
 
+// function renderArtFeed(){
+//     //build left card
+//     let leftCard = document.createElement('li');
+//     leftCard.innerHTML = "";
+//     leftCard.innerHTML = `
+//         <div class="column" style="background-color:#f2f2f2;">
+//         <!-- image card -->
+//         <div class="image-container">
+//             <div class="image-card">
+//             <h3 id="card-title" class="title">username.example</h2>
+//                 <button id="follow-button" class="follow-button">+ Follow</button>
+//             <img id="card-image" class="image" src="images/Mona Lisa.jpg" alt="Title of image goes here too" />
+//             <div class="likes-section">
+//                 <button id="like-button" class="like-button">★</button>
+//                 <span id="like-count" class="likes">0 favorites</span>
+//             </div>
+//             <ul id="comments-list" class="comments">
+//             </ul>
+//             <form id="comment-form" class="comment-form">
+//                 <input
+//                 class="comment-input"
+//                 type="text"
+//                 name="comment"
+//                 id="comment"
+//                 placeholder="Add a comment..."
+//                 />
+//                 <button class="comment-button" type="submit">Post</button>
+//             </form>
+//             </div>
+//         </div>
+//         <br>
+//         <br>
+//         </div>
+//     `;
+
+//     //build right card
+
+//     //add card to feed
+//     document.querySelector('#art-feed').append(leftCard);
+// }
+
 //Modal Button
 function initModal(){
     var modal = document.getElementById("myModal"); // Get the modal

@@ -14,7 +14,7 @@
     <div class="fixed-header">
       <div class="container">
           <nav>
-              <a href="#">Home</a>
+              <a href="#">The Art Rotation Co.</a>
               <a href="#">About</a>
               <a href="#">Login</a>
               <a href="#">Contact Us</a>
@@ -26,13 +26,22 @@
   <!-- Body Start -->
   <div class="container">
 
-    <!-- Column 1 -->
+    <!-- add image  -->
+    <div class="add-new-image">
+      <button id="refresh-button" class="refresh-button">Refresh Feed</button>
+      <br>
+      <br>
+    </div>
+
+     <!-- Column 1 -->
     <div class="row">
       <div class="column" style="background-color:#f2f2f2;">
-            <!-- image card -->
+           
+        <!-- image cards -->
+         <div> 
+            <ul style = "list-style: none;" id="art-feed" class="cards">
           <div class="image-container">
             <div class="image-card">
-              <h3 id="card-title" class="title">username.example</h2>
                 <button id="follow-button" class="follow-button">+ Follow</button>
               <img id="card-image" class="image" src="images/Mona Lisa.jpg" alt="Title of image goes here too" />
               <div class="likes-section">
@@ -40,9 +49,6 @@
                 <span id="like-count" class="likes">0 favorites</span>
               </div>
               <ul id="comments-list" class="comments">
-                <li>When can I get this?</li>
-                <li>Interested ✋</li>
-                <li>Love the detail 😍</li>
               </ul>
               <form id="comment-form" class="comment-form">
                 <input
@@ -58,10 +64,10 @@
           </div>
           <br>
           <br>
-          <!-- add image  -->
-          <div class="add-new-image">
-            <button id="add-image-button" class="add-image-button">+ Add your own art</button>
-            
+          
+          <!-- <div> 
+            <ul style = "list-style: none;"id="art-feed" class="cards"> -->
+            <!-- art image feed goes here -->
           </div>
 
   <!-- Column 2 -->
@@ -75,18 +81,15 @@
             <!-- <h3 class="h3">Subject: <span class=span-h3>text</span></h3>
             <h3 class="h3">Price: <span class=span-h3>text</span></hh3> -->
           </div>
-          <div>
-            <h2 class="h2">Description:</h2>
-            <p class="p">Gotta find something for here!</p>
-          </div>
-          <button id="myBtn">More informattion</button>
+          <br>
+          <button id="availability-button" class="availability-button">Check Availability</button>
           <!-- The Modal -->
           <div id="myModal" class="modal">
           
             <!-- Modal content -->
             <div class="modal-content">
               <span class="close">&times;</span>
-              <p>Fill in with link to MET website</p>
+              <p>This item is currently on hold. This user will reach out to you with more information once it becomes available!</p>
             </div>
         
           </div>

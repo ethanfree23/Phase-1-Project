@@ -152,7 +152,7 @@ body {
 
 
 /* Add Image Button */
-.add-image-button{
+.refresh-button{
   border: none;
   background-color: rgb(255, 255, 255);
   font-size: 0.8rem;
@@ -235,9 +235,9 @@ nav a{
 }
 /* MODAL button */
 /* The Modal Button */
-.rent-button {
+.availability-button {
   border: none;
-  background: none;
+  background: white;
   padding: 5px;
   font-size: 0.8rem;
   font-weight: 600;
