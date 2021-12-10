@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function(){
     renderArtArray();
     initModal();
 })
+initEventListeners();
 
 //getAPIImage
 function renderArtArray(){
@@ -16,7 +17,10 @@ function renderArtArray(){
         let randomArtObjectUrl; 
 
         data.objectIDs.forEach(element => artObjectArray.push(element));
-        randomArtObject = artObjectArray[Math.floor(Math.random()*artObjectArray.length)];
+        let newArtObject = () => {
+            return randomArtObject = artObjectArray[Math.floor(Math.random()*artObjectArray.length)];
+        }
+        randomArtObject = newArtObject();
 
         randomArtObjectUrl = `https://collectionapi.metmuseum.org/public/collection/v1/objects/${randomArtObject}`;
 
@@ -30,7 +34,6 @@ function renderArtArray(){
         )};
         getImage();
 
-        //*****************Ethan Code Inserted*****************
         function fetchArtistInfo(){
             fetch (randomArtObjectUrl)
             .then(resp => resp.json())
@@ -44,6 +47,45 @@ function renderArtArray(){
         }
         fetchArtistInfo();
     });
+}
+
+function renderArtFeed(){
+                let leftCard = document.createElement('li');
+                leftCard.innerHTML = "";
+                leftCard.innerHTML = `
+                    <!-- image card -->
+                    <div class="image-container">
+                        <div class="image-card">
+                            <button id="follow-button" class="follow-button">+ Follow</button>
+                        <img id="new-card-image" class="image" src="images/Mona Lisa.jpg" alt="Title of image goes here too" />
+                        <div class="likes-section">
+                            <button id="like-button" class="like-button">★</button>
+                            <span id="like-count" class="likes">0 favorites</span>
+                        </div>
+                        <ul id="comments-list" class="comments">
+                        </ul>
+                        <form id="comment-form" class="comment-form">
+                            <input
+                            class="comment-input"
+                            type="text"
+                            name="comment"
+                            id="comment"
+                            placeholder="Add a comment..."
+                            />
+                            <button class="comment-button" type="submit">Post</button>
+                        </form>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    </div>
+                `;
+
+
+    //build right card
+
+    //add card to feed
+    document.querySelector('#art-feed').append(leftCard);
 }
 
 //Modal Button
@@ -66,34 +108,39 @@ function initModal(){
 }
 
 //Event Listeners
-//eventListener to favorite
-document.querySelector('#like-button').addEventListener('click', function(e){
-    const countListener = e.detail;
-    document.querySelector('#like-count').textContent = countListener + ' favorites';
-});
+function initEventListeners(){
+    //eventListener to favorite
+    document.querySelector('#like-button').addEventListener('click', function(e){
+        const countListener = e.detail;
+        document.querySelector('#like-count').textContent = countListener + ' favorites';
+    });
 
-//eventListener for follow button
-document.querySelector('#follow-button').addEventListener('click', function(){
-    document.querySelector('#follow-button').textContent = '✔ Following';
-});
+    //eventListener for follow button
+    document.querySelector('#follow-button').addEventListener('click', function(){
+        document.querySelector('#follow-button').textContent = '✔ Following';
+    });
 
-//eventListener for comments
-const form = document.querySelector('#comment-form')
-form.addEventListener('submit', function(e){
-    e.preventDefault();
-    const li = document.createElement('li');
-    const comment = document.querySelector('#comment').value;
-    li.textContent = comment;
-    document.querySelector('#comments-list').append(li);
-    form.reset();
-});
+    //eventListener for comments
+    const form = document.querySelector('#comment-form')
+    form.addEventListener('submit', function(e){
+        e.preventDefault();
+        const li = document.createElement('li');
+        const comment = document.querySelector('#comment').value;
+        li.textContent = comment;
+        document.querySelector('#comments-list').append(li);
+        form.reset();
+    });
 
-//eventListener to refresh page
-document.querySelector('#refresh-button').addEventListener('click', function(){
-    renderArtArray();
-    document.getElementById('comments-list').textContent = "";
-});
+    //eventListener to refresh page
+    document.querySelector('#refresh-button').addEventListener('click', function(){
+        location.reload();
+        document.getElementById('comments-list').textContent = "";
+    });
 
+    document.querySelector('#add-button').addEventListener('click', function(){
+        renderArtFeed()
+    });
+}
 //***Stretch Goals Code ***/
 //Persist Likes (then refactor and add to code above)
 //Persist Follow Button
